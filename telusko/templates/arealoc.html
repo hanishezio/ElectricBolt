@@ -1,0 +1,131 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<style>
+
+.fnt{
+  font-size: 28px;
+  margin-top: -16px;
+}
+
+.fnt2{
+  font-size: 17px;
+  text-align: center;
+  margin-top: 44px;
+}
+
+.btn{
+  font-size: 15px;
+}
+.pt-top{
+  padding-top:80px;
+
+}
+html,
+body {
+  height: 100%;
+}
+
+.jumbotron {
+    padding: 13rem 2rem!important;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>ElectricBolt</h1>
+  <p>Welcome to ElectricBolt , Hanish</p>
+</div>
+
+<div class="container pt-top">
+  <div class="row">
+    <div class="col-sm-4 text-center">
+      <h3 class="fnt">Send Mail</h3>
+      <button type="button" class="btn btn-outline-primary" onclick="myFunction()">Annanagar</button>
+    </div>
+    <div class="col-sm-4 text-center">
+      <h3 class="fnt" >Send Mail</h3>
+      <button class="btn btn-outline-primary" onclick="myFunction2()">Theppakulam</button>
+    </div>
+    <div class="col-sm-4 text-center">
+      <h3 class="fnt">Send Mail</h3>
+      <button class="btn btn-outline-primary" onclick="myFunction3()">Villapuram</button>
+    </div>
+    <div class="container pt-top">
+      <p class="fnt2">After pressing the Button , Please wait for a min to send the Mail</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function myFunction() {
+ location.href = "annanagar";
+}
+
+function myFunction2() {
+ location.href = "theppakulam";
+}
+
+function myFunction3() {
+ location.href = "villapuram";
+}
+</script>
+
+</body>
+</html> 
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redirect to a Webpage</h2>
+<p>The replace() method replaces the current document with a new one:</p>
+
+<button onclick="myFunction()">Annanagar</button><br>
+<button onclick="myFunction2()">Theppakulam</button><br>
+<button onclick="myFunction3()">Villapuram</button>
+
+<script>
+function myFunction() {
+ location.href = "annanagar";
+}
+
+function myFunction2() {
+ location.href = "theppakulam";
+}
+
+function myFunction3() {
+ location.href = "villapuram";
+}
+</script>
+
+</body>
+</html>  {% endcomment %}
